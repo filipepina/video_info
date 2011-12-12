@@ -16,7 +16,7 @@ class Youtube
   end
 
   def video_id_for(url)
-    b.gsub(regex) do
+    url.gsub(regex) do
       @video_id = $3
     end
   end
