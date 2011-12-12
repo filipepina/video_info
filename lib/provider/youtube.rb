@@ -2,7 +2,7 @@ class Youtube
   attr_accessor :video_id, :url, :provider, :title, :description, :keywords,
                 :duration, :date, :width, :height,
                 :thumbnail_small, :thumbnail_large,
-                :view_count,
+                :view_count, :category,
                 :openURI_options
 
   def initialize(url, options = {})
