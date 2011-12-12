@@ -12,11 +12,11 @@ class Youtube
   end
 
   def regex
-    /youtu(.be)?(be.com)?.*(?:\/|v=)(\w+)/
+    /youtu(.be)?(be.com)?.*(?:\/|v=)((\w|-)+)/
   end
 
   def video_id_for(url)
-    url.gsub(regex) do
+    b.gsub(regex) do
       @video_id = $3
     end
   end
